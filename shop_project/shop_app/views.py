@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from shop_app.models import Product, Customer
+from shop_app.models import Product, Customer, Maillot
 
 
 def index(request):
@@ -20,6 +20,17 @@ def customers(request):
 def customer(request, customer_id):
   customer = Customer.objects.get(id=customer_id)
   return render(request, 'customer.html', context={ 'customer': customer })
+
+def maillots(request):
+   maillots = Maillot.objects.all()
+   return render(request,'maillots.html', context={ 'maillots': maillots})
+
+
+def maillot(request, maillot_id):
+   maillot = Maillot.objects.get(id=maillot_id)
+   return render(request,'maillot.html', context={ 'maillot': maillot})
+
+
 
 
 
