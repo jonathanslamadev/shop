@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+  <title>{{ maillot.name }} {{ maillot.description }}</title>
+</head>
+<body>
+
+  <h1>{{ maillot.name }} {{ maillot.description }}</h1>
+  <p>{{ maillot.price }}</p>
+  <img src="http://{{ request.get_host }}/{{ maillot.profile_picture }}">
+
+</body>
+</html>

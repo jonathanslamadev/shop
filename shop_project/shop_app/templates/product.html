@@ -10,6 +10,17 @@
 	<h3>Name: {{ product.name }}</h3>
 	<h3>Price: {{ product.price }}</h3>
 	<h3>Description : {{ product.description }}</h3>
+
+<h1>Comment</h1>
+	{% for comment in comments %}
+	<a href="#"></a>
+		<h3> {{ comment.username }} </h3>
+		<p> {{ comment.text }} </p>
+		
+		{% endfor %}
+	}
+}
+}
   
 </body>
 </html>

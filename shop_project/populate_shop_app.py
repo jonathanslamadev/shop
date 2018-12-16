@@ -26,7 +26,7 @@ def generate_products():
   for product in range(50):
     price = random.randint(30, 150)
     brand = generate_brand()
-    product = Product.objects.get_or_create(name=brand, price=price, description=fakegen.text(max_nb_chars=400))[0]
+    product = Product.objects.get_or_create(name=name, price=price, description=fakegen.text(max_nb_chars=400))[0]
     print(product)
 
 
