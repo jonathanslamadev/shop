@@ -25,3 +25,16 @@ class Customer(models.Model):
 
   def __repr__(self):
     return "<Customer {}>".format(self.email)
+
+class Comment(models.Model):
+  username = models.CharField(max_length=264)
+  text = models.TextField()
+  date = models.DateField()
+  product = models.ForeignKey(Product, on_delete=models.CASCADE)
+
+
+  def __str__(self):
+    return self.username
+
+  def __repr__(self):
+    return "<Comment {}>".format(self.username)

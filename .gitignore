@@ -1,4 +1,4 @@
-```# Byte-compiled / optimized / DLL files
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 
@@ -47,9 +47,8 @@ coverage.xml
 *.pot
 
 # Sphinx documentation
-docs/_build/```
+docs/_build/
 
-Zone de message
+# Database file
+db.sqlite3
 
-
-Envoyer un message à #torah-python-q3-2018
