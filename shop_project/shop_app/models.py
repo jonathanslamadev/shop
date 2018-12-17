@@ -38,3 +38,6 @@ class Comment(models.Model):
 
   def __repr__(self):
     return "<Comment {}>".format(self.username)
+
+
+    

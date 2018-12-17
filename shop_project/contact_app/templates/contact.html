@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+</head>
+<body>
+
+	<h1> Ajoutez un contact</h1>
+
+	<form action="contact_form" method="POST">
+		{{ contact_form.as_p }} 
+		{% csrf_token %}
+		<input type="submit" name="submit" valur="send comment">
+	</form>
+		}
+
+</body>
+</html>
